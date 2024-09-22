@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwindCss & daisyUi CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .lexend-font {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+  </head>
+  <body class=".lexend-font">
+    <header class="bg-[#F9F7F3] sticky top-0 overflow-hidden">
+      <section class="w-4/5 mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <button class="btn bg-[#B4F461] px-8 font-bold">Blog</button>
+          </div>
+          <div class="navbar-center">
+            <img src="assets/logo.png" alt="" />
+            <a class="btn btn-ghost text-xl font-bold">Donate Bangladesh</a>
+          </div>
+          <div class="navbar-end">
+            <img src="assets/coin.png" alt="" />
+            <p class="font-bold pl-2"><span>5000</span> BDT</p>
+          </div>
+        </div>
+        <section class="text-center my-5">
+          <button class="btn bg-[#B4F461] px-8 font-bold">Donation</button>
+          <button class="btn bg-white border-2 border-gray-50 px-8 font-bold">
+            History
+          </button>
+        </section>
+      </section>
+    </header>
+    <main class="w-4/5 mx-auto">
+      <!-- first card -->
+      <section>
+        <div class="card lg:card-side bg-base-100 shadow-xl p-6">
+          <div class="w-1/2 p-8">
+            <img src="assets/noakhali.png" alt="Album" />
+          </div>
+          <div class="card-body w-1/2">
+            <div class="bg-[#1111110D] btn flex-row flex w-1/3">
+              <img src="assets/coin.png" alt="" />
+              <p class="font-bold pl-2"><span>0</span> BDT</p>
+            </div>
+            <h2 class="card-title font-semibold">
+              Donate for Flood at Noakhali, Bangladesh
+            </h2>
+            <p class="font-normal text-gray-500">
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+            <input
+              type="number"
+              placeholder="Write Donation Amount"
+              class="input input-bordered w-full"
+            />
+            <div class="btn bg-[#B4F461] font-bold">Donate Now</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
