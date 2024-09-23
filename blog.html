@@ -61,16 +61,16 @@
             methods depending on how you want to target the element (by id,
             class, tag, or using CSS selectors). Below are the most common ways
             to select elements:
-            <p class="text-lg"><span class="font-bold">1. Selecting by id:</span> You can use the
+            <p class="text-lg mt-3"><span class="font-bold">1. Selecting by id:</span> You can use the
               document.getElementById() method to select an element by its unique
               id.</p>
-            <p class="text-lg"><span class="font-bold">2. Selecting by class:</span>
+            <p class="text-lg mt-3"><span class="font-bold">2. Selecting by class:</span>
               To select elements by their class name, use document.getElementsByClassName(). This method returns a live HTMLCollection (an array-like object) of all elements with the specified class.</p>
-            <p class="text-lg"><span class="font-bold">3. Selecting by tag:</span>
+            <p class="text-lg mt-3"><span class="font-bold">3. Selecting by tag:</span>
               You can select all elements of a specific tag using document.getElementsByTagName(). It returns an HTMLCollection of elements with the specified tag name.</p>
-            <p class="text-lg"><span class="font-bold">4. Selecting using CSS selectors:</span>
+            <p class="text-lg mt-3"><span class="font-bold">4. Selecting using CSS selectors:</span>
               The document.querySelector() method returns the first element that matches a CSS selector, while document.querySelectorAll() returns all matching elements as a static NodeList (an array-like object).</p>
-            <p class="text-lg"><span class="font-bold">5. Selecting by name attribute:</span>
+            <p class="text-lg mt-3"><span class="font-bold">5. Selecting by name attribute:</span>
               For form elements, you can use document.getElementsByName() to select elements by their name attribute.</p>
 
           </p>
@@ -87,7 +87,7 @@
             Event delegation is a technique in JavaScript where you take advantage of event bubbling to manage events more efficiently. Instead of attaching event listeners to multiple child elements, you attach a single event listener to a parent element. This event listener can then respond to events triggered by any of its child elements.
             <br>
             <span class="font-bold">How Event Delegation Works:</span><br>
-            <span class="font-bold">Event Bubbling:</span> When an event occurs on an element, it doesn't just affect that element—it "bubbles" up through its ancestors in the DOM tree. So, if a click happens on a button inside a <pre><div></div></pre>, the click event bubbles up to the parent <,><div></div>, then up to the body tag, and so on, until it reaches the document's root. <br>
+            <span class="font-bold">Event Bubbling:</span> When an event occurs on an element, it doesn't just affect that element—it "bubbles" up through its ancestors in the DOM tree. So, if a click happens on a button inside a < div >, the click event bubbles up to the parent < div >, then up to the < body >, and so on, until it reaches the document's root. <br>
             <span class="font-bold">Event Listener on Parent:</span> Instead of attaching individual event listeners to each child element, you place a single event listener on a common parent. When the event bubbles up to the parent, you check which child triggered the event and handle it accordingly.</p>
         </div>
       </div>
@@ -99,11 +99,38 @@
         </div>
         <div class="collapse-content">
           <p class="text-lg">To manipulate an element's attributes and styles using the DOM, JavaScript provides various methods and properties that allow you to modify elements dynamically. <br>
+            <span class="font-bold">1. Manipulating Attributes</span><br>
             Attributes like id, class, src, href, etc., can be accessed and modified using specific methods and properties.
-<br>
-            a. Using getAttribute() and setAttribute()
+          <br>
+            <span class="font-bold">a. Using getAttribute() and setAttribute() </span> <br>
             getAttribute(attrName): Retrieves the value of a specified attribute.
             setAttribute(attrName, value): Sets or updates the value of a specified attribute.
+            <br>
+            <span class="font-bold">b. Directly Accessing Attributes</span> <br>
+            You can access and modify some attributes directly via properties (for example, element.id, element.href, element.src, etc.).
+            <br>
+            <span class="font-bold">c. Removing Attributes </span><br>
+            removeAttribute(attrName): Removes the specified attribute from the element.
+            Attributes:
+            <br>
+            <span class="font-bold">2. Manipulating Styles </span><br>
+            You can modify an element’s styles using the style property or by adding/removing CSS classes. <br>
+            <span class="font-bold">a. Using the style Property</span> <br>
+            The style property allows you to directly modify inline styles of an element. You can change CSS properties by assigning values to them in camelCase (for example, backgroundColor, fontSize). <br>
+            <span class="font-bold">b. Manipulating Multiple Styles with cssText</span> <br>
+            You can modify multiple CSS properties at once by setting the style.cssText property. <br>
+            <span class="font-bold">c. Adding and Removing Classes</span> <br>
+            To manipulate an element’s styles using CSS classes, you can add, remove, or toggle classes with classList. <br>
+
+              d. Getting Computed Styles classList.add(): Adds a class to the element.<br>
+              classList.remove(): Removes a class from the element.<br>
+              classList.toggle(): Toggles a class on/off.<br>
+              classList.contains(): Checks if the element has a specific class.<br>
+              <span class="font-bold">d. Getting Computed Styles </span><br>
+            You can retrieve the computed styles of an element (the final styles after applying CSS rules, including those from external stylesheets) using the getComputedStyle() method. 
+            <br>
+            <span class="font-bold">3. Combining Attribute and Style Manipulation</span>  <br>
+            You can combine attribute and style manipulation to dynamically update elements in response to user interactions or other events.
           </p>
         </div>
       </div>
