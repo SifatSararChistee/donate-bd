@@ -12,3 +12,7 @@ document.getElementById("donation-btn").addEventListener("click", function () {
   document.getElementById("history-btn").classList.add("bg-white");
   document.getElementById("donation-btn").classList.add("bg-lime-300");
 });
+
+document.getElementById("blog-btn").addEventListener("click", function () {
+  window.location.href = "./blog.html";
+});

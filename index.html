@@ -57,10 +57,10 @@
         </section>
       </section>
     </header>
-    <main class="w-4/5 mx-auto max-w-screen-lg gap-7 flex flex-col">
+    <main class="w-4/5 mx-auto max-w-screen-lg">
       <section id="card-section">
         <!-- first card -->
-        <section>
+        <section class="m-7">
           <div class="card lg:card-side bg-base-100 shadow-xl lg:p-6 md:p-6">
             <div class="w-full lg:w-1/2 md:w-1/2 md:p-8 lg:p-8 p-5">
               <img src="assets/noakhali.png" alt="Album" />
@@ -96,7 +96,7 @@
           </div>
         </section>
         <!-- second card -->
-        <section>
+        <section class="m-7">
           <div class="card lg:card-side bg-base-100 shadow-xl lg:p-6 md:p-6">
             <div class="w-full lg:w-1/2 md:w-1/2 md:p-8 lg:p-8 p-5">
               <img src="assets/feni.png" alt="Album" />
@@ -134,7 +134,7 @@
           </div>
         </section>
         <!--third  card -->
-        <section>
+        <section class="m-7">
           <div class="card lg:card-side bg-base-100 shadow-xl lg:p-6 md:p-6">
             <div class="lg:w-1/2 md:w-1/2 md:p-8 lg:p-8 p-5">
               <img src="assets/quota-protest.png" alt="Album" />
@@ -177,11 +177,30 @@
 
       <!-- history section -->
       <section id="history-section" class="mt-5 hidden"></section>
+
+      <section>
+        <dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box flex flex-col justify-center items-center">
+            <h3 class="text-3xl font-extrabold pb-3">Congrats!</h3>
+            <img src="assets/coin.png" alt="" />
+            <p class="py-4 text-lg font-medium">
+              You have Donated For HumanKind
+            </p>
+            <p class="py-4 text-xl font-extrabold">Successfully</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close Confirmation</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </section>
     </main>
     <script src="./js/firstcard.js"></script>
     <script src="./js/secondcard.js"></script>
     <script src="./js/thirdcard.js"></script>
     <script src="./js/utilities.js"></script>
-    <script src="./js/btn-funtions.js"></script>
+    <script src="./js/btn-functions.js"></script>
   </body>
 </html>
