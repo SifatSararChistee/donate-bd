@@ -31,4 +31,5 @@ document.getElementById("donate-btn3").addEventListener("click", function () {
 
   document.getElementById("history-section").appendChild(history);
   document.getElementById("my_modal").showModal();
+  document.getElementById("amount-input3").value = "";
 });
